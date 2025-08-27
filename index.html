@@ -31,32 +31,32 @@
     <header>
       <!-- Nav section -->
       <div
-        class="parent-nav flex justify-between items-center bg-white shadow-[0px_1px_50px_0px_rgba(181,181,181,0.25)] px-6 py-14"
+        class="parent-nav flex justify-between items-center bg-white shadow-[0px_1px_50px_0px_rgba(181,181,181,0.25)] px-3 md:px-6 py-9 md:py-14"
       >
         <div class="left-child-nav flex items-center justify-center">
           <img class="h-[50px]" src="./assets/logo.png" alt="" />
           <h1
-            class="text-[#006747] font-extrabold text-2xl leading-none ml-3 inter-font"
+            class="text-[#006747] font-bold text-xl md:font-extrabold md:text-2xl leading-none ml-2 md:ml-3 inter-font"
           >
             Emergency <br />
             Service
           </h1>
         </div>
-        <div class="right-child-nav flex gap-5">
+        <div class="right-child-nav flex gap-3 md:gap-5">
           <div
-            class="flex items-center justify-center bg-[#41ff6b1a] gap-3 px-8 py-3 rounded-3xl"
+            class="flex items-center justify-center bg-[#41ff6b1a] p-2 gap-2 md:gap-3 rounded-lg md:px-8 md:py-3 md:rounded-3xl"
           >
-            <p class="inter-font font-black">0</p>
-            <img class="h-7" src="./assets/heart.png" alt="" />
+            <p class="inter-font font-bold md:font-black">0</p>
+            <img class="h-5 md:h-7" src="./assets/heart.png" alt="" />
           </div>
           <div
-            class="flex items-center justify-center bg-[#41ff6b1a] gap-3 px-8 py-3 rounded-3xl"
+            class="flex items-center justify-center bg-[#41ff6b1a] p-2 gap-2 md:gap-3 rounded-lg md:px-8 md:py-3 md:rounded-3xl"
           >
-            <p class="inter-font font-black">100</p>
-            <img class="h-7" src="./assets/coin.png" alt="" />
+            <p class="inter-font font-bold md:font-black">100</p>
+            <img class="h-5 md:h-7" src="./assets/coin.png" alt="" />
           </div>
           <div
-            class="flex items-center justify-center bg-[#00a63e] gap-3 px-8 py-3 rounded-3xl"
+            class="flex items-center justify-center bg-[#00a63e] p-2 md:gap-3 rounded-lg md:px-8 md:py-3 md:rounded-3xl"
           >
             <p class="inter-font font-semibold text-white">
               <span>2</span> Copy
@@ -70,10 +70,12 @@
         class="banner-parent text-center bg-[linear-gradient(90deg,rgba(1,49,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] px-14 py-3"
       >
         <img class="mx-auto h-[92px]" src="./assets/logo-dark.png" alt="" />
-        <h1 class="hind_madurai-font text-[40px] font-semibold text-white">
+        <h1
+          class="hind_madurai-font text-2xl md:text-3xl md:text-[40px] font-semibold text-white my-3"
+        >
           জরুরি সেবা ডিরেক্টরি
         </h1>
-        <p class="hind_madurai-font font-semibold text-xl text-white">
+        <p class="hind_madurai-font font-semibold md:text-xl text-white">
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
         </p>
@@ -82,9 +84,11 @@
 
     <main>
       <!-- Card section -->
-      <section class="card px-16 pt-16 pb-[86px]">
+      <section class="card px-5 py-6 md:px-16 md:pt-16 pb-[86px]">
         <!-- parent card -->
-        <div class="all-card-seciton grid grid-cols-4 grid-rows-3 gap-8">
+        <div
+          class="all-card-seciton grid md:grid-cols-4 md:grid-rows-3 gap-4 md:gap-8"
+        >
           <!-- card-1 -->
           <div
             class="shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white p-8 rounded-2xl"
@@ -93,19 +97,19 @@
               <div class="bg-[#ffe3e2] p-[14px] rounded-2xl mb-4">
                 <img class="h-8" src="./assets/emergency.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart text-xl"></i>
             </div>
             <!-- card-text -->
             <div>
-              <h1 class="hind_madurai-font font-bold text-2xl">
+              <h1 class="hind_madurai-font font-bold text-xl md:text-2xl">
                 জাতীয় জরুরি সেবা
               </h1>
-              <p class="text-lg inter-font mb-6 text-gray-600">
+              <p class="md:text-lg inter-font mb-6 text-gray-600">
                 National Emergency
               </p>
-              <h2 class="font-bold text-3xl">999</h2>
+              <h2 class="font-bold text-2xl md:text-3xl">999</h2>
               <button
-                class="btn hind_madurai-font text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
+                class="btn hind_madurai-font text-base md:text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
               >
                 সার্বজনীন
               </button>
@@ -133,15 +137,17 @@
               <div class="bg-[#ffe3e2] p-[14px] rounded-2xl mb-4">
                 <img class="h-8" src="./assets/police.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart text-xl"></i>
             </div>
             <!-- card-text -->
             <div>
-              <h1 class="hind_madurai-font font-bold text-2xl">পুলিশ</h1>
-              <p class="text-lg inter-font mb-6 text-gray-600">Police</p>
-              <h2 class="font-bold text-3xl">999</h2>
+              <h1 class="hind_madurai-font font-bold text-xl md:text-2xl">
+                পুলিশ
+              </h1>
+              <p class="md:text-lg inter-font mb-6 text-gray-600">Police</p>
+              <h2 class="font-bold text-2xl md:text-3xl">999</h2>
               <button
-                class="btn hind_madurai-font text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
+                class="btn hind_madurai-font text-base md:text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
               >
                 পুলিশ
               </button>
@@ -169,17 +175,19 @@
               <div class="bg-[#ffe3e2] p-[14px] rounded-2xl mb-4">
                 <img class="h-8" src="./assets/fire-service.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart text-xl"></i>
             </div>
             <!-- card-text -->
             <div>
-              <h1 class="hind_madurai-font font-bold text-2xl">
+              <h1 class="hind_madurai-font font-bold text-xl md:text-2xl">
                 ফায়ার সার্ভিস
               </h1>
-              <p class="text-lg inter-font mb-6 text-gray-600">Fire Service</p>
-              <h2 class="font-bold text-3xl">999</h2>
+              <p class="md:text-lg inter-font mb-6 text-gray-600">
+                Fire Service
+              </p>
+              <h2 class="font-bold text-2xl md:text-3xl">999</h2>
               <button
-                class="btn hind_madurai-font text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
+                class="btn hind_madurai-font text-base md:text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
               >
                 ফায়ার
               </button>
@@ -201,7 +209,7 @@
           </div>
           <!-- call history card -->
           <div
-            class="shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white p-8 rounded-2xl row-span-3"
+            class="shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white p-8 rounded-2xl md:row-span-3 order-last md:order-none"
           >
             <div class="flex justify-between items-center">
               <h1 class="font-medium text-xl">
@@ -245,17 +253,17 @@
               <div class="bg-[#ffe3e2] p-[14px] rounded-2xl mb-4">
                 <img class="h-8" src="./assets/ambulance.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart text-xl"></i>
             </div>
             <!-- card-text -->
             <div>
-              <h1 class="hind_madurai-font font-bold text-2xl">
+              <h1 class="hind_madurai-font font-bold text-xl md:text-2xl">
                 অ্যাম্বুলেন্স
               </h1>
-              <p class="text-lg inter-font mb-6 text-gray-600">Ambulance</p>
-              <h2 class="font-bold text-3xl">1994-999999</h2>
+              <p class="md:text-lg inter-font mb-6 text-gray-600">Ambulance</p>
+              <h2 class="font-bold text-2xl md:text-3xl">1994-999999</h2>
               <button
-                class="btn hind_madurai-font text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
+                class="btn hind_madurai-font text-base md:text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
               >
                 স্বাস্থ্য
               </button>
@@ -283,19 +291,19 @@
               <div class="bg-[#ffe3e2] p-[14px] rounded-2xl mb-4">
                 <img class="h-8" src="./assets/emergency.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart text-xl"></i>
             </div>
             <!-- card-text -->
             <div>
-              <h1 class="hind_madurai-font font-bold text-2xl">
+              <h1 class="hind_madurai-font font-bold text-xl md:text-2xl">
                 নারী ও শিশু সহায়তা
               </h1>
-              <p class="text-lg inter-font mb-6 text-gray-600">
+              <p class="md:text-lg inter-font mb-6 text-gray-600">
                 Women & Child Helpline
               </p>
-              <h2 class="font-bold text-3xl">109</h2>
+              <h2 class="font-bold text-2xl md:text-3xl">109</h2>
               <button
-                class="btn hind_madurai-font text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
+                class="btn hind_madurai-font text-base md:text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
               >
                 সহায়তা
               </button>
@@ -323,17 +331,19 @@
               <div class="bg-[#ffe3e2] p-[14px] rounded-2xl mb-4">
                 <img class="h-8" src="./assets/emergency.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart text-xl"></i>
             </div>
             <!-- card-text -->
             <div>
-              <h1 class="hind_madurai-font font-bold text-2xl">দুদক</h1>
-              <p class="text-lg inter-font mb-6 text-gray-600">
+              <h1 class="hind_madurai-font font-bold text-xl md:text-2xl">
+                দুদক
+              </h1>
+              <p class="md:text-lg inter-font mb-6 text-gray-600">
                 Anti-Corruption
               </p>
-              <h2 class="font-bold text-3xl">106</h2>
+              <h2 class="font-bold text-2xl md:text-3xl">106</h2>
               <button
-                class="btn hind_madurai-font text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
+                class="btn hind_madurai-font text-base md:text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
               >
                 সরকারি
               </button>
@@ -361,19 +371,19 @@
               <div class="bg-[#ffe3e2] p-[14px] rounded-2xl mb-4">
                 <img class="h-8" src="./assets/emergency.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart text-xl"></i>
             </div>
             <!-- card-text -->
             <div>
-              <h1 class="hind_madurai-font font-bold text-2xl">
+              <h1 class="hind_madurai-font font-bold text-xl md:text-2xl">
                 বিদ্যুৎ বিভ্রাট
               </h1>
-              <p class="text-lg inter-font mb-6 text-gray-600">
+              <p class="md:text-lg inter-font mb-6 text-gray-600">
                 Electricity Outage
               </p>
-              <h2 class="font-bold text-3xl">16216</h2>
+              <h2 class="font-bold text-2xl md:text-3xl">16216</h2>
               <button
-                class="btn hind_madurai-font text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
+                class="btn hind_madurai-font text-base md:text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
               >
                 বিদ্যুৎ
               </button>
@@ -401,15 +411,17 @@
               <div class="bg-[#ffe3e2] p-[14px] rounded-2xl mb-4">
                 <img class="h-8" src="./assets/emergency.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart text-xl"></i>
             </div>
             <!-- card-text -->
             <div>
-              <h1 class="hind_madurai-font font-bold text-2xl">ব্র্যাক</h1>
-              <p class="text-lg inter-font mb-6 text-gray-600">Brac</p>
-              <h2 class="font-bold text-3xl">16445</h2>
+              <h1 class="hind_madurai-font font-bold text-xl md:text-2xl">
+                ব্র্যাক
+              </h1>
+              <p class="md:text-lg inter-font mb-6 text-gray-600">Brac</p>
+              <h2 class="font-bold text-2xl md:text-3xl">16445</h2>
               <button
-                class="btn hind_madurai-font text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
+                class="btn hind_madurai-font text-base md:text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
               >
                 এনজিও
               </button>
@@ -437,19 +449,19 @@
               <div class="bg-[#ffe3e2] p-[14px] rounded-2xl mb-4">
                 <img class="h-8" src="./assets/emergency.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart text-xl"></i>
             </div>
             <!-- card-text -->
             <div>
-              <h1 class="hind_madurai-font font-bold text-2xl">
+              <h1 class="hind_madurai-font font-bold text-xl md:text-2xl">
                 বাংলাদেশ রেলওয়ে
               </h1>
-              <p class="text-lg inter-font mb-6 text-gray-600">
+              <p class="md:text-lg inter-font mb-6 text-gray-600">
                 Bangladesh Railway
               </p>
-              <h2 class="font-bold text-3xl">163</h2>
+              <h2 class="font-bold text-2xl md:text-3xl">163</h2>
               <button
-                class="btn hind_madurai-font text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
+                class="btn hind_madurai-font text-base md:text-lg font-normal border-none rounded-3xl bg-[#f2f2f2] text-gray-500"
               >
                 পরিবহন
               </button>
