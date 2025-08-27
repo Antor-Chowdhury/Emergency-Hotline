@@ -18,7 +18,38 @@
     <!-- Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
+  <body class="max-w-[1920px] mx-auto bg-[#f5fff6]">
+    <!-- Nav section -->
+    <div
+      class="parent-nav border-2 border-red-500 flex justify-between items-center bg-white shadow-[0px_1px_50px_0px_rgba(181,181,181,0.25)] px-6 py-14"
+    >
+      <div class="left-child-nav flex items-center justify-center">
+        <img class="h-[50px]" src="./assets/logo.png" alt="" />
+        <h1 class="text-[#006747] font-extrabold text-2xl leading-none ml-3">
+          Emergency <br />
+          Service
+        </h1>
+      </div>
+      <div class="right-child-nav flex gap-5">
+        <div
+          class="flex items-center justify-center bg-[#41ff6b1a] gap-3 px-8 py-3 rounded-3xl"
+        >
+          <p class="inter-font font-black">0</p>
+          <img class="h-7" src="./assets/heart.png" alt="" />
+        </div>
+        <div
+          class="flex items-center justify-center bg-[#41ff6b1a] gap-3 px-8 py-3 rounded-3xl"
+        >
+          <p class="inter-font font-black">100</p>
+          <img class="h-7" src="./assets/coin.png" alt="" />
+        </div>
+        <div
+          class="flex items-center justify-center bg-[#00a63e] gap-3 px-8 py-3 rounded-3xl"
+        >
+          <p class="inter-font font-semibold text-white"><span>2</span> Copy</p>
+        </div>
+      </div>
+    </div>
     <!-- script file link -->
     <script src="./script/main.js"></script>
   </body>
