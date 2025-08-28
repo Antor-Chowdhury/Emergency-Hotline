@@ -69,3 +69,30 @@ const clearHistoryButton = document.getElementById("btn-clear-history");
 clearHistoryButton.addEventListener("click", function () {
   callHistory.innerHTML = "";
 });
+
+// copy button section --> Challenge Part
+
+const copyCount = document.getElementById("copy-count");
+const copyButtons = document.getElementsByClassName("btn-copy");
+
+for (let i = 0; i < copyButtons.length; i++) {
+  copyButtons[i].addEventListener("click", function () {
+    const currentCopyCount = parseInt(copyCount.innerText);
+
+    const updatedCopyCount = currentCopyCount + 1;
+
+    copyCount.innerText = updatedCopyCount;
+
+    // copy alert text
+
+    const serviceNumber = serviceNumbers[i].innerText;
+    alert(`নম্বর কপি হয়েছে: ${serviceNumber}`);
+
+    // copy number to clipboard
+
+    navigator.clipboard
+      .writeText(serviceNumber)
+      .then(() => console.log(`Copied: ${serviceNumber}`))
+      .catch((err) => console.error("Failed to copy: ", err));
+  });
+}
