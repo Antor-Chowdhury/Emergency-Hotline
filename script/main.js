@@ -26,7 +26,7 @@ const serviceNumbers = document.getElementsByClassName("service-number");
 
 const totalCoins = document.getElementById("coin");
 
-const callHistory = document.getElementById("call-history-container");
+const callHistory = document.getElementById("call-history");
 
 for (let i = 0; i < callButtons.length; i++) {
   callButtons[i].addEventListener("click", function () {
@@ -56,8 +56,16 @@ for (let i = 0; i < callButtons.length; i++) {
 
       callHistory.appendChild(div);
     } else {
-      alert("Not enough coin");
+      alert(`❌ আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে ২০ কয়েন লাগবে।`);
     }
     totalCoins.innerText = coin;
   });
 }
+
+// Clear History Section
+
+const clearHistoryButton = document.getElementById("btn-clear-history");
+
+clearHistoryButton.addEventListener("click", function () {
+  callHistory.innerHTML = "";
+});
