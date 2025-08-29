@@ -8,11 +8,23 @@ for (const heart of hearts) {
   heart.addEventListener("click", function () {
     const currentHeartCount = parseInt(heartIconCounter.innerText);
 
-    // updating the count value
-    const updatedHeartCount = currentHeartCount + 1;
+    // filling the heart color when it's clicked and when clicked again decreasing the count number and removing the filled color
 
-    // initializing the new count value
-    heartIconCounter.innerText = updatedHeartCount;
+    if (heart.classList.contains("fa-solid")) {
+      heart.classList.remove("fa-solid", "text-red-500");
+      heart.classList.add("fa-regular");
+
+      const updatedHeartCount = currentHeartCount - 1;
+      heartIconCounter.innerText = updatedHeartCount;
+    } else {
+      heart.classList.remove("fa-regular");
+      heart.classList.add("fa-solid", "text-red-500");
+      // updating the count value
+      const updatedHeartCount = currentHeartCount + 1;
+
+      // initializing the new count value
+      heartIconCounter.innerText = updatedHeartCount;
+    }
   });
 }
 
